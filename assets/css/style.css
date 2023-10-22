@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    min-width: fit-content;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+.tipCalculator_wrapper {
+    min-width: 40%;
+    max-width: 450px;
+    min-height: fit-content;
+    background-color: lightcoral;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 4vh;
+}
+
+.tipCalculator_wrapper h1 {
+    padding: 2vh 5%;
+}
+
+.tipCalculator_wrapper form {
+    padding-inline: 5%;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tipCalculator_wrapper form div {
+    padding-block: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tipCalculator_wrapper form div label {
+    font-size: 1.2rem;
+    padding-bottom: 1vh;
+}
+
+.tipCalculator_wrapper form div input {
+    padding: 4px;
+    border: none;
+    width: 100%;
+}
+
+.tipCalculator_wrapper form div select {
+    padding: 4px;
+    width: 100%;
+}
+
+.tipCalculator_wrapper form button {
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: antiquewhite;
+    width: 60%;
+    align-self: center;
+}
+.tipCalculator_wrapper form button:hover {
+    background-color: lightblue;
+}
+
+.tipCalculator_wrapper p {
+    padding: 1vh 10%;
+    text-align: center;
+}

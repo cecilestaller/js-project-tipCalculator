@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Project Tip-Calculator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="tipCalculator_wrapper">
+        <h1>Trinkgeldrechner</h1>
+        <form onsubmit="return false">
+            <div>
+                <label for="rechnungsbetrag">Wie hoch war die Rechnung? [€]</label>
+                <input type="number" name="rechnungsbetrag" id="amount" placeholder="€">
+            </div>
+            <div>
+                <label for="teiler">Wie viele Personen teilen sich die Rechnung?</label>
+                <input type="number" name="teiler" id="people">
+            </div>
+            <div>
+                <select name="" id="" required>
+                    <option value="0" disabled selected hidden>Wie war der Service?</option>
+                    <option value="2">schlecht (2%)</option>
+                    <option value="10">mittel (10%)</option>
+                    <option value="20">super (20%)</option>
+                </select>
+            </div>
+            <button onclick="calculateTip()">Berechne!</button>
+        </form>
+        <p id="tipAmount"></p>
+        <p id="completeBillAmount"></p>
+        <p id="splittedAmount"></p>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
